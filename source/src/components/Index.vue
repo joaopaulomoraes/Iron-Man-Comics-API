@@ -18,6 +18,10 @@
       </aside>
     </section>
 
+    <router-link :to="'/comics'">
+      <button class="next-action"></button>
+    </router-link>
+
     <footer class="footer">
       {{ results.attributionText }}
     </footer>
