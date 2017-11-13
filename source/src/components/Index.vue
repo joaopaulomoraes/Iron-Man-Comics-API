@@ -1,16 +1,16 @@
 <template>
   <div id="index">
 
-    <section
+    <section class="wrapper"
       v-for="d in data"
       :key="d.id"
     >
-      <article>
-        <img alt="Comic Thumbnail"
+      <article class="main">
+        <img alt="Comic Thumbnail" class="fullwidth"
           :src="`${d.thumbnail.path}.${d.thumbnail.extension}`"
         >
       </article>
-      <aside>
+      <aside class="aside upper-text">
         <header>
           <h1>{{ d.name }}</h1>
         </header>
@@ -18,7 +18,7 @@
       </aside>
     </section>
 
-    <footer>
+    <footer class="footer">
       {{ results.attributionText }}
     </footer>
 
