@@ -11,9 +11,17 @@ Cloning the project.
 git clone https://bitbucket.org/joaopaulomoraes/desafio-frontend.git
 ```
 
-Access the *source* folder of the project.
+Access the **source** folder of the project.
 ```
 cd desafio-frontend/source
+```
+
+Add the data of your access key in file **config/Credentials.js**
+```
+{
+  publicKey: 'YOUR-PUBLIC-KEY',
+  privateKey: 'YOUR-PRIVATE-KEY'
+}
 ```
 
 Install dependencies.
