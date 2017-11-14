@@ -18,6 +18,10 @@ b {
   align-items: center;
 }
 
+.wrapper:nth-child(even) {
+  background-color: #fafafa;  
+}
+
 .wrapper > * {
   flex: 1 100%;
 }
