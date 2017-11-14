@@ -12,7 +12,7 @@
       </article>
       <aside class="aside upper-text">
         <header>
-          <h1>{{ d.name }}</h1>
+          <h1 class="welcome">{{ d.name }}</h1>
         </header>
         {{ d.description }}
       </aside>
