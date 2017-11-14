@@ -41,6 +41,14 @@ export default {
     }
   },
 
+  metaInfo: {
+    title: 'Iron Man',
+    titleTemplate: '%s - Welcome',
+    htmlAttrs: {
+      lang: 'en'
+    }
+  },
+
   methods: {
     callComics () {
       Request.get('characters/1009368')
