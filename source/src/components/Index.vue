@@ -31,6 +31,8 @@
 
 <script>
 import Request from '@/modules/request'
+import comicLook from '@/assets/img/comic-look.jpg'
+import comicFly from '@/assets/img/comic-fly.jpg'
 
 export default {
   name: 'Index',
@@ -57,11 +59,22 @@ export default {
         this.data = this.results.data.results
       })
       .catch(e => {})
+    },
+
+    thumbnailChange () {
+      jQuery('.next-action')
+        .hover(function () {
+          $('img.fullwidth').attr('src', comicLook)
+        })
+          .mouseout(function () {
+            $('img.fullwidth').attr('src', comicFly)
+          })
     }
   },
 
   mounted () {
     this.callComics()
+    this.thumbnailChange()
   }
 }
 </script>
