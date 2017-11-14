@@ -8,6 +8,10 @@ h2 {
   text-transform: uppercase;
 }
 
+h1.welcome {
+  font-size: 5.125em;
+}
+
 b {
   font-weight: 700;
 }
@@ -77,12 +81,12 @@ button.back-action:hover {
 
 button.next-action {
   right: 0;
-  background: black center url('../button-right.png') no-repeat;
+  background: black center url('../img/button-right.png') no-repeat;
 }
 
 button.back-action {
   left: 0;
-  background: black center url('../button-left.png') no-repeat;
+  background: black center url('../img/button-left.png') no-repeat;
 }
 
 .spacer {
