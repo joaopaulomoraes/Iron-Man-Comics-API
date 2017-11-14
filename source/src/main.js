@@ -1,9 +1,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import meta from 'vue-meta'
+import Meta from 'vue-meta'
+import VueLazyload from 'vue-lazyload'
 
-Vue.use(meta)
+Vue.use(Meta)
+Vue.use(VueLazyload, {
+  lazyComponent: true,
+  loading: './assets/img/loading.gif',
+  attempt: 3
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

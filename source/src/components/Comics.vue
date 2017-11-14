@@ -7,9 +7,11 @@
     >
       <article class="main">
         <router-link :to="getComicId(r.resourceURI)">
-          <img alt="Comic Thumbnail" class="comics"
-            :src="`${r.thumbnail.path}.${r.thumbnail.extension}`"
-          >
+          <lazy-component>
+            <img class="comics" alt="Comic Thumbnail"
+              :src="`${r.thumbnail.path}.${r.thumbnail.extension}`"
+            >
+          </lazy-component>
         </router-link>
       </article>
       <aside class="aside">
@@ -70,7 +72,7 @@ export default {
       Request.get('characters/1009368/comics', {
         params: {
           limit: this.limit,
-          offset: this.limit * this.count,
+          offset: (this.limit + this.count) * this.count,
           orderBy: '-focDate'
         }
       })
