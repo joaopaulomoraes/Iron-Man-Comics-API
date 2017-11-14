@@ -8,7 +8,7 @@ A Vue project to work with Iron Man comics provided by Marvel.
 
 Cloning the project.
 ```
-git clone https://bitbucket.org/joaopaulomoraes/desafio-frontend.git
+git clone https://github.com/joaopaulomoraes/Iron-Man-Comics-API.git
 ```
 
 Access the **source** folder of the project.
