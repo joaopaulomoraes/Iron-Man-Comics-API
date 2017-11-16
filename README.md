@@ -13,7 +13,7 @@ git clone https://github.com/joaopaulomoraes/Iron-Man-Comics-API.git
 
 Access the **source** folder of the project.
 ```
-cd desafio-frontend/source
+cd Iron-Man-Comics-API/source
 ```
 
 Add the data of your access key in file **config/Credentials.js**
